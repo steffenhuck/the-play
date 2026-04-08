@@ -7,7 +7,6 @@
   --paper-yellow-hot: #f7ff5c;
   --paper-magenta: #ff2bd6;
   --paper-magenta-deep: #d100a9;
-  --paper-orange: #ff9c00;
   --ink: #050505;
   --ink-soft: #242424;
   --ink-muted: #4b4b4b;
@@ -104,12 +103,14 @@ h1 {
   padding: 0 20px;
 }
 
-/* dialogue blocks */
 .speech {
-  margin: 0.78rem 0 0.48rem;
+  margin: 0.78rem 0 0.46rem;
 }
 
-/* speaker labels */
+.speech.continuation {
+  margin: 0.24rem 0 0.26rem;
+}
+
 .speaker {
   margin: 0 0 0.08rem;
   font-family: "Inter", Arial, sans-serif;
@@ -121,7 +122,6 @@ h1 {
   color: var(--paper-magenta-deep);
 }
 
-/* keep role qualifiers smaller, darker, and not uppercase */
 .qualifier {
   display: inline;
   font-weight: 600;
@@ -131,7 +131,6 @@ h1 {
   color: var(--ink-soft);
 }
 
-/* spoken lines */
 .line {
   margin: 0;
   font-size: 1.22rem;
@@ -143,7 +142,6 @@ h1 {
   padding-left: 0;
 }
 
-/* stage directions */
 .stage-direction {
   margin: 0;
   padding-left: 1.2rem;
@@ -152,22 +150,26 @@ h1 {
   line-height: 1.46;
 }
 
-/* very tight from speech into stage direction */
 .speech + .stage-direction {
   margin-top: 0;
 }
 
-/* compact grouping of consecutive stage directions */
 .stage-direction + .stage-direction {
-  margin-top: 0.22rem;
+  margin-top: 0.2rem;
 }
 
-/* stronger break from stage-direction block into speech */
 .stage-direction + .speech {
+  margin-top: 0.92rem;
+}
+
+.opening-break + .speech {
   margin-top: 1.9rem;
 }
 
-/* signature */
+.stage-direction + .speech.continuation {
+  margin-top: 0.22rem;
+}
+
 .site-signature {
   width: min(100%, var(--max-width));
   margin: 98px auto 0;
@@ -232,7 +234,11 @@ h1 {
   }
 
   .speech {
-    margin: 0.72rem 0 0.44rem;
+    margin: 0.72rem 0 0.42rem;
+  }
+
+  .speech.continuation {
+    margin: 0.22rem 0 0.24rem;
   }
 
   .line {
@@ -254,6 +260,14 @@ h1 {
   }
 
   .stage-direction + .speech {
+    margin-top: 0.82rem;
+  }
+
+  .opening-break + .speech {
     margin-top: 1.55rem;
+  }
+
+  .stage-direction + .speech.continuation {
+    margin-top: 0.2rem;
   }
 }
