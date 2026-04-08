@@ -105,7 +105,7 @@ h1 {
 }
 
 .stage-direction {
-  margin: 1.2rem 0 1.35rem;
+  margin: 0.45rem 0 0.8rem;
   padding-left: 1.2rem;
   color: var(--ink-muted);
   font-size: 1.08rem;
@@ -113,7 +113,7 @@ h1 {
 }
 
 .speech {
-  margin: 1.15rem 0 1.55rem;
+  margin: 1.05rem 0 1rem;
 }
 
 .speaker {
@@ -213,7 +213,12 @@ h1 {
   }
 
   .stage-direction {
+    margin: 0.4rem 0 0.7rem;
     padding-left: 0.8rem;
     font-size: 1rem;
+  }
+
+  .speech {
+    margin: 0.95rem 0 0.95rem;
   }
 }
