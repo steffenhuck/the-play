@@ -105,19 +105,19 @@ h1 {
 }
 
 .stage-direction {
-  margin: 0.45rem 0 0.8rem;
+  margin: 0.15rem 0 0.55rem;
   padding-left: 1.2rem;
   color: var(--ink-muted);
   font-size: 1.08rem;
-  line-height: 1.7;
+  line-height: 1.58;
 }
 
 .speech {
-  margin: 1.05rem 0 1rem;
+  margin: 0.95rem 0 0.78rem;
 }
 
 .speaker {
-  margin: 0 0 0.18rem;
+  margin: 0 0 0.12rem;
   font-family: "Inter", Arial, sans-serif;
   font-size: 0.96rem;
   line-height: 1.2;
@@ -213,12 +213,13 @@ h1 {
   }
 
   .stage-direction {
-    margin: 0.4rem 0 0.7rem;
+    margin: 0.1rem 0 0.45rem;
     padding-left: 0.8rem;
     font-size: 1rem;
+    line-height: 1.5;
   }
 
   .speech {
-    margin: 0.95rem 0 0.95rem;
+    margin: 0.85rem 0 0.72rem;
   }
 }
