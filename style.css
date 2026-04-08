@@ -106,10 +106,10 @@ h1 {
 
 /* dialogue blocks */
 .speech {
-  margin: 0.82rem 0 0.56rem;
+  margin: 0.78rem 0 0.48rem;
 }
 
-/* speaker lines */
+/* speaker labels */
 .speaker {
   margin: 0 0 0.08rem;
   font-family: "Inter", Arial, sans-serif;
@@ -121,11 +121,11 @@ h1 {
   color: var(--paper-magenta-deep);
 }
 
-/* qualifier must stay visually secondary and not all caps */
+/* keep role qualifiers smaller, darker, and not uppercase */
 .qualifier {
   display: inline;
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 0.88em;
   letter-spacing: 0.01em;
   text-transform: none !important;
   color: var(--ink-soft);
@@ -149,22 +149,22 @@ h1 {
   padding-left: 1.2rem;
   color: var(--ink-muted);
   font-size: 1.08rem;
-  line-height: 1.5;
+  line-height: 1.46;
 }
 
-/* short gap from speech to stage direction */
+/* very tight from speech into stage direction */
 .speech + .stage-direction {
-  margin-top: 0.08rem;
+  margin-top: 0;
 }
 
 /* compact grouping of consecutive stage directions */
 .stage-direction + .stage-direction {
-  margin-top: 0.34rem;
+  margin-top: 0.22rem;
 }
 
-/* larger break when stage directions hand over to speech */
+/* stronger break from stage-direction block into speech */
 .stage-direction + .speech {
-  margin-top: 1.55rem;
+  margin-top: 1.9rem;
 }
 
 /* signature */
@@ -231,29 +231,29 @@ h1 {
     max-width: none;
   }
 
-  .line {
-    font-size: 1.12rem;
+  .speech {
+    margin: 0.72rem 0 0.44rem;
   }
 
-  .speech {
-    margin: 0.76rem 0 0.5rem;
+  .line {
+    font-size: 1.12rem;
   }
 
   .stage-direction {
     padding-left: 0.8rem;
     font-size: 1rem;
-    line-height: 1.48;
+    line-height: 1.42;
   }
 
   .speech + .stage-direction {
-    margin-top: 0.06rem;
+    margin-top: 0;
   }
 
   .stage-direction + .stage-direction {
-    margin-top: 0.28rem;
+    margin-top: 0.18rem;
   }
 
   .stage-direction + .speech {
-    margin-top: 1.28rem;
+    margin-top: 1.55rem;
   }
 }
